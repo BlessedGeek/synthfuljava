@@ -11,6 +11,15 @@ import java.util.Map;
 import java.io.Serializable;
 
 /**
+ * Have your cake and eat it too. <br/> <br/>
+ * 
+ * An ordered hash to allow accessing mapped content either by hash key or by position index.
+ * When an object is stored, its key is stored in an ordered list. If an object is stored under
+ * hash key "a" and at position 5, then that object can be accessed either by <br/>
+ * get("a"), or <br/>
+ * get(5)  <br/> <br/>
+ * 
+ * 
  * @author blessedgeek
  * 
  */
@@ -80,10 +89,10 @@ public class HashList<K, V> extends HashMap<K, V> implements Serializable {
 
 				try {
 					this.put((K) key, (V) value);
-				} catch (ClassCastException ex) {
-
-				} catch (Exception ex) {
-
+				}
+				catch (ClassCastException ex) {
+				}
+				catch (Exception ex) {
 				}
 			}
 
