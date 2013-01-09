@@ -27,7 +27,7 @@ implements ToStringBufferable, EmptyFactory, Serializable
 	private static final long serialVersionUID = 1L;
 
 	/**
-	 * Instantiates a new HashTreeNode.
+	 * Instantiates a new HashVector.
 	 */
     public HashVector ()
     {
@@ -35,7 +35,7 @@ implements ToStringBufferable, EmptyFactory, Serializable
     }
     
     /**
-	 * Instantiates a new HashTreeNode.
+	 * Instantiates a new HashVector.
 	 * 
 	 * @param map
 	 */
@@ -45,7 +45,7 @@ implements ToStringBufferable, EmptyFactory, Serializable
     }
     
     /**
-	 * Instantiates a new HashTreeNode.
+	 * Instantiates a new HashVector.
 	 * 
 	 * @param t
 	 */
@@ -55,7 +55,7 @@ implements ToStringBufferable, EmptyFactory, Serializable
     }
     
     /**
-	 * Instantiates a new HashTreeNode.
+	 * Instantiates a new HashVector.
 	 * 
 	 * @param initSz
 	 */
@@ -65,7 +65,7 @@ implements ToStringBufferable, EmptyFactory, Serializable
     }
     
     /**
-	 * Instantiates a new HashTreeNode.
+	 * Instantiates a new HashVector.
 	 * 
 	 * @param initSz
 	 * @param factor
@@ -80,7 +80,7 @@ implements ToStringBufferable, EmptyFactory, Serializable
 	 * 
 	 * @param map
 	 * 
-	 * @return Adds the as HashTreeNode
+	 * @return Adds the as HashVector
 	 */
     public HashVector<K,V> add (Map<K,V> map)
     {
@@ -100,7 +100,7 @@ implements ToStringBufferable, EmptyFactory, Serializable
 	 * 
 	 * @param t
 	 * 
-	 * @return Adds the as HashTreeNode
+	 * @return Adds the as HashVector
 	 */
     public HashVector<K,V> add (Object[][] t)
     {
@@ -222,7 +222,7 @@ implements ToStringBufferable, EmptyFactory, Serializable
 	 * @param key
 	 * @param value
 	 * 
-	 * @return Put value as HashTreeNode
+	 * @return Put value as HashVector
 	 */
     protected HashVector<K,V> putValue (K key, V value)
     {
